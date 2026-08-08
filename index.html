@@ -2,606 +2,610 @@
 layout: null
 ---
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <meta name="juicyads-site-verification" content="b8200452826fa3c7ca84937d26bdf691">
-    <script>
-    (function() {
-        var hostname = location.hostname;
-        var parts = hostname.split(".");
-        var fullName = parts[0];
-        if (fullName.toLowerCase() === "www") fullName = parts[1] || fullName;
-        var formatText = function(str) {
-            return str.replace(/[-_]/g, " ").replace(/\+/g, " ").replace(/\b\w/g, function(c) { return c.toUpperCase(); });
-        };
-        var displayDomain = formatText(fullName);
-        document.title = displayDomain + " - Beautiful Girls Photo Gallery";
-        var metaDesc = document.querySelector("meta[name=\"description\"]") || document.createElement("meta");
-        metaDesc.name = "description";
-        metaDesc.content = displayDomain + " - Stunning collection of beautiful girls photography from around the world.";
-        if (!metaDesc.parentNode) document.head.appendChild(metaDesc);
-        var metaAuthor = document.querySelector("meta[name=\"author\"]") || document.createElement("meta");
-        metaAuthor.name = "author";
-        metaAuthor.content = displayDomain;
-        if (!metaAuthor.parentNode) document.head.appendChild(metaAuthor);
-        var canonical = document.querySelector("link[rel=\"canonical\"]") || document.createElement("link");
-        canonical.setAttribute("rel", "canonical");
-        canonical.setAttribute("href", location.href);
-        if (!canonical.parentNode) document.head.appendChild(canonical);
-        var schemaData = {"@context":"https://schema.org","@type":"WebSite","name":displayDomain,"description":"Beautiful girls photo gallery from around the world","url":location.origin};
-        var schemaScript = document.createElement("script");
-        schemaScript.type = "application/ld+json";
-        schemaScript.textContent = JSON.stringify(schemaData);
-        document.head.appendChild(schemaScript);
-    })();
-    </script>
-
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <title id="dynamic-title">LeakShorts · Viral Leaked Feed</title>
+    <meta id="dynamic-description" name="description" content="Swipe through leaked content from influencers, TikTokers, and OnlyFans creators. Short-form leaked videos feed.">
+    <link id="dynamic-canonical" rel="canonical" href="https://example.com/movie/">
+    
+    <meta name="juicyads-site-verification" content="07555beed32bb7e410959411b71399d5">
+    
     <style>
-        /* ===== RESET & BASE ===== */
-        *,*::before,*::after{box-sizing:border-box}
-        html{overflow-x:hidden;background:#050505}
-        body{
-            width:100%;min-width:320px;max-width:100%;margin:0;padding:0;
-            background:#050505;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-            color:#fff;line-height:1.3;-webkit-font-smoothing:antialiased;
+        /* ========== GLOBAL COLOR VARIABLES (MUDAH DIEDIT) ========== */
+        :root {
+            --bg-primary: #000000;
+            --bg-card: linear-gradient(145deg, #0f0f0f, #050505);
+            --text-primary: #ffffff;
+            --text-secondary: #aaaaaa;
+            --accent-primary: #ff0050;
+            --accent-hover: #e00045;
+            --accent-gradient: linear-gradient(135deg, #fff, #ff0050, #00f2ea);
+            --border-card: #2a2a2a;
+            --border-light: #1a1a1a;
+            --badge-bg: #ff0050;
+            --meta-color: #888888;
+            --footer-color: #444444;
+            --link-mini: #1a1a1a;
         }
 
-        /* ===== HEADER ===== */
-        .site-header{
-            width:100%;position:fixed;top:0;left:0;z-index:1000;
-            background:rgba(5,5,5,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-            border-bottom:1px solid rgba(255,255,255,.08);
-            padding:12px 12px;
-        }
-        .header-inner{
-            display:flex;align-items:center;gap:10px;max-width:1280px;margin:0 auto;
-        }
-        .site-avatar{flex-shrink:0;line-height:0}
-        .site-avatar svg{width:34px;height:34px}
-        .site-title{
-            flex:1;font-size:16px;font-weight:700;letter-spacing:.3px;
-            white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#fff;
-        }
-        .menu-btn{
-            width:42px;height:42px;flex-shrink:0;
-            background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
-            cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;
-            border-radius:50%;transition:all .2s ease;
-        }
-        .menu-btn:active{background:rgba(255,255,255,.12);transform:scale(.95)}
-        .menu-btn svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
-
-        .slide-menu{
-            display:none;position:fixed;top:58px;right:8px;z-index:999;
-            background:#1a1a1a;border:1px solid #333;border-radius:14px;padding:6px;
-            min-width:200px;box-shadow:0 8px 32px rgba(0,0,0,.6);
-        }
-        .slide-menu.open{display:block}
-        .slide-menu ul{list-style:none;margin:0;padding:0}
-        .slide-menu li+li{border-top:1px solid rgba(255,255,255,.04)}
-        .slide-menu a{
-            display:block;padding:13px 16px;color:#ccc;text-decoration:none;
-            font-size:15px;font-weight:500;border-radius:10px;transition:all .15s ease;
-        }
-        .slide-menu a:active{background:#2a2a2a;color:#fff}
-
-        /* ===== DESKTOP NAV (hidden di mobile) ===== */
-        .desktop-nav{display:none}
-
-        /* ===== AD CONTAINER ===== */
-        .ad-box{
-            display:flex;justify-content:center;align-items:center;
-            margin:0 auto;max-width:100%;overflow:hidden;
-            background:#080808;min-height:50px;
-        }
-        .ad-box ins{max-width:100%}
-        
-        /* Responsive ad visibility */
-        .ad-desktop{display:none}
-        .ad-mobile{display:flex}
-        .ad-both{display:flex}
-
-        /* ===== AD BREAK (top & bottom) ===== */
-        .ad-break{
-            padding:12px 0;background:#080808;
-            border-top:1px solid rgba(255,255,255,.04);
-            border-bottom:1px solid rgba(255,255,255,.04);
-        }
-        .ad-break:first-child{margin-top:58px}
-
-        /* ===== AD INLINE (antar section) ===== */
-        .ad-inline{
-            margin:24px 0;padding:12px 0;
-            background:#080808;
-            border-top:1px solid rgba(255,255,255,.03);
-            border-bottom:1px solid rgba(255,255,255,.03);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        /* ===== MAIN LAYOUT ===== */
-        .main-layout{
-            display:flex;flex-direction:column;gap:0;width:100%;max-width:1280px;
-            margin:0 auto;padding:0;
-        }
-        .content-area{flex:1;min-width:0;padding:0;width:100%}
-
-        .sidebar{display:none}
-        .sticky-ad{position:sticky;top:80px;display:flex;justify-content:center}
-
-        /* ============================
-           GV2 GALLERY SYSTEM
-           ============================ */
-        .gv2-section{margin:20px 0}
-        .gv2-section:first-child{margin-top:4px}
-        .gv2-title{padding:0 8px;margin:0 auto 10px;max-width:1400px}
-        .gv2-title h2{
-            margin:0;font-size:19px;font-weight:800;color:#fff;letter-spacing:.2px;
-        }
-        .gv2-featured-title h2{font-size:21px;color:#ff6b6b}
-        .gv2-grid{max-width:1400px;margin:auto;padding:0;gap:0}
-
-        /* === MOBILE: 1 KOLOM FULLWIDTH === */
-        .gv2-featured{display:grid;grid-template-columns:1fr;gap:4px}
-        .gv2-latest{display:grid;grid-template-columns:1fr;gap:4px}
-        .gv2-stories{display:grid;grid-template-columns:1fr;gap:4px}
-        .gv2-tutorials{display:grid;grid-template-columns:1fr;gap:4px}
-        .gv2-archive{display:grid;grid-template-columns:1fr;gap:4px}
-
-        .gv2-featured-big,
-        .gv2-featured-small{
-            grid-column:auto;grid-row:auto;
+        body {
+            background: var(--bg-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
+            color: var(--text-primary);
         }
 
-        /* Card */
-        .gv2-card{
-            position:relative;overflow:hidden;border-radius:0;background:#0a0a0a;
-            -webkit-tap-highlight-color:transparent;
-        }
-        .gv2-card-link{
-            display:block;width:100%;
-        }
-        .gv2-card-link img{
-            width:100%;height:100%;object-fit:cover;display:block;
-            transition:transform .3s ease;aspect-ratio:16/9;
-        }
-        .gv2-card-link:active img{transform:scale(1.02)}
-
-        /* Card body (di luar link) */
-        .gv2-card-body{
-            padding:10px 10px 12px;
-            background:linear-gradient(to top, rgba(0,0,0,.95) 0%, rgba(10,10,10,1) 100%);
-            z-index:2;
-        }
-        .gv2-card-title-link{
-            color:#fff;text-decoration:none;display:block;
-            margin:0 0 3px;font-size:13px;font-weight:700;line-height:1.25;
-            display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
-            overflow:hidden;
-        }
-        .gv2-card-title-link:active{color:#ff6b6b}
-        .gv2-card-desc{
-            margin:0;font-size:10px;color:rgba(255,255,255,.65);
-            line-height:1.35;
-            overflow:hidden;
-        }
-        /* Biarkan konten deskripsi apa adanya */
-        .gv2-card-desc img,
-        .gv2-card-desc svg,
-        .gv2-card-desc iframe,
-        .gv2-card-desc script,
-        .gv2-card-desc style{display:none!important}
-        .gv2-card-desc *{
-            font-size:inherit!important;color:inherit!important;
-            margin:0!important;padding:0!important;
-            background:none!important;border:none!important;
+        /* app container */
+        .shorts-app {
+            max-width: 480px;
+            margin: 0 auto;
+            background: var(--bg-primary);
+            min-height: 100vh;
+            position: relative;
         }
 
-        .excerpt{display:none}
-
-        /* ============================
-           TABLET (min-width:600px)
-           ============================ */
-        @media(min-width:600px){
-            .ad-desktop{display:flex}
-            .ad-mobile{display:none}
-            .ad-both{display:flex}
-
-            .site-header{padding:12px 16px}
-            .site-title{font-size:17px}
-            .ad-break{padding:16px 0}
-            .ad-break:first-child{margin-top:60px}
-            .ad-inline{margin:28px 0;padding:14px 0}
-            .gv2-title{padding:0 12px}
-            .gv2-title h2{font-size:22px}
-            .gv2-grid{padding:0 8px;gap:6px}
-
-            .gv2-featured{grid-template-columns:1fr 1fr;gap:6px}
-            .gv2-featured-big{grid-column:1 / -1}
-            .gv2-latest{grid-template-columns:1fr 1fr;gap:6px}
-            .gv2-stories{grid-template-columns:1fr 1fr;gap:6px}
-            .gv2-tutorials{grid-template-columns:1fr 1fr;gap:6px}
-            .gv2-archive{grid-template-columns:1fr 1fr;gap:6px}
-
-            .gv2-card{border-radius:6px}
-            .gv2-card-link img{aspect-ratio:9/16}
-            .gv2-card-body{padding:12px 12px 14px}
-            .gv2-card-title-link{font-size:14px}
-            .gv2-card-desc{font-size:11px}
+        /* header ala TikTok/Shorts */
+        .shorts-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            max-width: 480px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            padding: 1rem 1rem 2rem;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            pointer-events: none;
         }
 
-        /* ============================
-           DESKTOP (min-width:900px)
-           ============================ */
-        @media(min-width:900px){
-            body{max-width:1280px;margin:0 auto}
-
-            .site-header{
-                left:50%;transform:translateX(-50%);max-width:1280px;
-                padding:12px 20px;
-            }
-            .site-title{font-size:15px;font-weight:600;color:#ccc}
-            .menu-btn{display:none}
-            .slide-menu{display:none!important}
-
-            .ad-break:first-child{margin-top:62px}
-
-            .main-layout{flex-direction:row;padding:0 8px}
-            .sidebar{display:block;flex-shrink:0;padding:16px 8px;position:relative}
-            .sidebar-left{width:160px;border-right:1px solid rgba(255,255,255,.03)}
-            .sidebar-right{width:160px;border-left:1px solid rgba(255,255,255,.03)}
-
-            .gv2-section{margin:32px 0}
-            .gv2-section:first-child{margin-top:8px}
-            .gv2-title{padding:0 14px}
-            .gv2-title h2{font-size:22px}
-            .gv2-grid{padding:0 14px;gap:10px}
-
-            .gv2-featured{
-                grid-template-columns:2fr 1fr 1fr;
-                grid-template-rows:1fr 1fr;gap:10px;
-            }
-            .gv2-featured-big{
-                grid-column:1 / 2;grid-row:1 / 3;
-            }
-            .gv2-featured-big .gv2-card-link img{aspect-ratio:auto;height:100%}
-            .gv2-featured-small{grid-column:auto;grid-row:auto}
-            .gv2-featured-small .gv2-card-link img{aspect-ratio:9/16}
-
-            .gv2-latest{grid-template-columns:repeat(5,1fr);gap:10px}
-            .gv2-stories{grid-template-columns:repeat(4,1fr);gap:10px}
-            .gv2-tutorials{grid-template-columns:repeat(3,1fr);gap:10px}
-            .gv2-archive{grid-template-columns:repeat(6,1fr);gap:10px}
-
-            .gv2-card{border-radius:12px}
-            .gv2-card:hover .gv2-card-link img{transform:scale(1.05)}
-            .gv2-card-title-link:hover{color:#ff6b6b;text-decoration:underline}
-
-            /* Desktop nav: muncul */
-            .desktop-nav{
-                display:flex;gap:4px;padding:0 14px;max-width:1400px;margin:0 auto 8px;
-            }
-            .desktop-nav a{
-                padding:6px 12px;color:#999;text-decoration:none;font-size:13px;
-                border-radius:6px;transition:all .15s ease;
-            }
-            .desktop-nav a:hover{color:#fff;background:rgba(255,255,255,.04)}
+        .shorts-header a, .shorts-header span {
+            pointer-events: auto;
         }
 
-        /* ============================
-           LARGE DESKTOP (min-width:1100px)
-           ============================ */
-        @media(min-width:1100px){
-            .sidebar-left{width:180px}
-            .sidebar-right{width:180px}
-            .gv2-grid{gap:12px}
-            .gv2-featured{gap:12px}
-            .gv2-latest{gap:12px}
-            .gv2-stories{gap:12px}
-            .gv2-tutorials{gap:12px}
-            .gv2-archive{gap:12px}
+        .logo {
+            font-weight: 700;
+            font-size: 1.1rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .trend-icon {
+            background: rgba(255,255,255,0.15);
+            padding: 0.3rem 0.7rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+        }
+
+        /* breadcrumb (mini) */
+        .breadcrumb {
+            position: fixed;
+            top: 4rem;
+            left: 0;
+            right: 0;
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            font-size: 0.6rem;
+            color: var(--text-secondary);
+            z-index: 10;
+            background: transparent;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-primary);
+            text-decoration: none;
+        }
+
+        /* feed container */
+        .feed-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .feed-item {
+            height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5rem 1rem 2rem;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+        }
+
+        /* card style seperti video pendek */
+        .leak-card-short {
+            background: var(--bg-card);
+            border-radius: 28px;
+            padding: 1.25rem;
+            border: 1px solid var(--border-card);
+            transition: all 0.2s;
+        }
+
+        .leak-badge {
+            display: inline-block;
+            background: var(--badge-bg);
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            font-size: 0.6rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .leak-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .leak-desc {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.65rem;
+            color: var(--meta-color);
+            margin-bottom: 1rem;
+        }
+
+        .action-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: var(--accent-primary);
+            padding: 0.8rem;
+            border-radius: 40px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: all 0.15s;
+            margin-top: 0.5rem;
+        }
+
+        .action-button:hover {
+            background: var(--accent-hover);
+            transform: scale(0.98);
+        }
+
+        /* mini grid untuk multiple links */
+        .link-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .mini-link {
+            background: var(--link-mini);
+            padding: 0.4rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.65rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+        }
+
+        /* indicator */
+        .page-indicator {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background: rgba(0,0,0,0.6);
+            padding: 0.2rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.6rem;
+            z-index: 10;
+        }
+
+        /* default home (shorts feed) */
+        .default-shorts {
+            display: block;
+        }
+
+        .query-shorts {
+            display: none;
+        }
+
+        /* footer */
+        .footer-note {
+            font-size: 0.55rem;
+            color: var(--footer-color);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* H1 styling - paling atas tanpa halangan */
+        .dynamic-h1 {
+            position: relative;
+            z-index: 15;
+            text-align: center;
+            padding: 1rem 1rem 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 0;
+            letter-spacing: -0.3px;
+        }
+
+        /* H2, H3 styling */
+        .dynamic-h2, .dynamic-h3 {
+            text-align: center;
+            margin: 0.5rem 1rem;
+        }
+        .dynamic-h2 {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .dynamic-h3 {
+            font-size: 0.8rem;
+            color: var(--meta-color);
+            font-weight: 400;
+        }
+
+        @media (max-width: 480px) {
+            .leak-title { font-size: 1.1rem; }
+            .action-button { padding: 0.7rem; font-size: 0.75rem; }
+            .dynamic-h1 { font-size: 1.2rem; }
+            .dynamic-h2 { font-size: 0.85rem; }
+            .dynamic-h3 { font-size: 0.7rem; }
         }
     </style>
-    
 {% include head.html %}
-{% include verif.html %}
-
 </head>
-<body>
+<body><div loading="lazy">
+<nav>
+{% include /kw/p/image.html %}
+</nav>
+<div class="shorts-app">
+    <!-- H1, H2, H3 DINAMIS (paling atas, tidak terhalang) -->
+    <h1 id="dynamic-h1" class="dynamic-h1">LeakShorts</h1>
+    <h2 id="dynamic-h2" class="dynamic-h2">Trending Leaked Content</h2>
+    <h3 id="dynamic-h3" class="dynamic-h3">Viral Shorts Feed</h3>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="header-inner">
-            <div id="domainAvatar" class="site-avatar"></div>
-            <span id="blogMainTitle" class="site-title"></span>
-            <button class="menu-btn" id="blogMenuToggle" aria-label="Menu">
-                <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-                <svg viewBox="0 0 24 24" style="display:none"><path d="M6 6l12 12M6 18l12-12"/></svg>
-            </button>
+    <!-- DEFAULT SHORTS FEED (home) -->
+    <div id="default-shorts" class="default-shorts">
+        <div class="shorts-header">
+            <span class="logo">🔥 LEAKSHORTS</span>
+            <span class="trend-icon">⚡ 2.4M active</span>
         </div>
-    </header>
 
-    <!-- SLIDE MENU -->
-    <nav id="blogMenuPanel" class="slide-menu">
-        <ul>
-            <li><a href="/">🏠 Home</a></li>
-            <li><a href="/contact/">📩 Contact</a></li>
-            <li><a href="/privacy-policy/">🔒 Privacy Policy</a></li>
-            <li><a href="/terms-and-conditions/">📋 Terms & Conditions</a></li>
-        </ul>
-    </nav>
-
-    <script>
-    (function(){
-        var host = window.location.hostname.split(".");
-        var sub = host[0];
-        if (sub.toLowerCase() === "www") sub = host[1] || "";
-        var clean = sub.replace(/-/g, " ");
-        document.getElementById("blogMainTitle").textContent = clean.replace(/\b\w/g, function(c) { return c.toUpperCase(); });
-    })();
-    (function(){
-        var btn = document.getElementById("blogMenuToggle");
-        var panel = document.getElementById("blogMenuPanel");
-        var menuIcon = btn.querySelector("svg:first-child");
-        var closeIcon = btn.querySelector("svg:last-child");
-        btn.addEventListener("click", function(e){
-            e.stopPropagation();
-            var open = panel.classList.toggle("open");
-            menuIcon.style.display = open ? "none" : "block";
-            closeIcon.style.display = open ? "block" : "none";
-        });
-        document.addEventListener("click", function(e){
-            if(!panel.contains(e.target) && !btn.contains(e.target)){
-                panel.classList.remove("open");
-                menuIcon.style.display = "block";
-                closeIcon.style.display = "none";
-            }
-        });
-        panel.addEventListener("click", function(e){
-            e.stopPropagation();
-        });
-    })();
-    </script>
-
-    <!-- ==================== BANNER 06: TOP ==================== -->
-    <div class="ad-break">
-        <div class="ad-box ad-desktop">
-            {% include /ads/banner/06.html %}
+        <div class="feed-container">
+            <div class="feed-item">
+                <div class="leak-card-short">
+                    <span class="leak-badge">🔥 TRENDING NOW</span>
+                    <div class="leak-title">TikTok Star Leaked Video</div>
+                    <div class="leak-desc">Full leaked video compilation going viral on Telegram and Twitter.</div>
+                    <div class="stats-row"><span>▶ 2.3M views</span><span>❤️ 234K likes</span><span>💬 12K comments</span></div>
+                    <a href="/movie/?q=tiktok+star+leaked+video+full" class="action-button">▶ SWIPE UP TO WATCH LEAKED VIDEO</a>
+                </div>
+            </div>
+            <div class="feed-item">
+                <div class="leak-card-short">
+                    <span class="leak-badge">💎 EXCLUSIVE</span>
+                    <div class="leak-title">OnlyFans Creator Leaked Pack</div>
+                    <div class="leak-desc">Complete leaked OnlyFans content bundle. Limited access.</div>
+                    <div class="stats-row"><span>🔞 1.2M views</span><span>❤️ 98K likes</span><span>💬 8K comments</span></div>
+                    <a href="/movie/?q=onlyfans+creator+leaked+pack" class="action-button">💎 ACCESS LEAKED CONTENT</a>
+                </div>
+            </div>
+            <div class="feed-item">
+                <div class="leak-card-short">
+                    <span class="leak-badge">📸 NEW</span>
+                    <div class="leak-title">Instagram Influencer Leaked Gallery</div>
+                    <div class="leak-desc">Private Instagram photos that were deleted within hours.</div>
+                    <div class="stats-row"><span>🖼️ 987K views</span><span>❤️ 76K likes</span><span>💬 5K comments</span></div>
+                    <a href="/movie/?q=instagram+influencer+leaked+gallery" class="action-button">📸 VIEW LEAKED PHOTOS</a>
+                </div>
+            </div>
         </div>
-        <div class="ad-box ad-mobile">
-            {% include /ads/banner/04.html %}
-        </div>
+        <div class="page-indicator">⬆️ 1/3 ⬇️</div>
     </div>
 
-    <!-- DESKTOP NAV -->
-    <nav class="desktop-nav">
-        <a href="/">Home</a>
-        <a href="/contact/">Contact</a>
-        <a href="/privacy-policy/">Privacy Policy</a>
-        <a href="/terms-and-conditions/">Terms & Conditions</a>
-    </nav>
-
-    <!-- MAIN LAYOUT -->
-    <div class="main-layout">
-
-        <!-- LEFT SIDEBAR: Banner 05 -->
-        <aside class="sidebar sidebar-left">
-            <div class="sticky-ad">
-                {% include /ads/banner/05.html %}
-            </div>
-        </aside>
-
-        <!-- MAIN CONTENT -->
-        <main class="content-area">
-
-            <!-- ========== FEATURED ========== -->
-            {% assign featured_posts = site.posts | slice: 0, 5 %}
-            {% if featured_posts.size >= 5 %}
-            <section class="gv2-section">
-                <div class="gv2-title gv2-featured-title">
-                    <h2>🔥 Featured</h2>
-                </div>
-                <div class="gv2-grid gv2-featured">
-                    {% for post in featured_posts %}
-                    <article class="gv2-card {% if forloop.first %}gv2-featured-big{% else %}gv2-featured-small{% endif %}">
-                        <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-link">
-                            {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
-                            {% endif %}
-                        </a>
-                        <div class="gv2-card-body">
-                            <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-title-link">{{ post.title }}</a>
-                            <div class="gv2-card-desc">
-                                {% assign before_svg = post.content | split: '<p>' | first %}
-                                {{ before_svg }}
-                            </div>
-                        </div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </section>
-            {% endif %}
-
-            <!-- ========== BANNER 01: SETELAH FEATURED ========== -->
-            <div class="ad-inline">
-                <div class="ad-box ad-desktop">
-                    {% include /ads/banner/01.html %}
-                </div>
-                <div class="ad-box ad-mobile">
-                    {% include /ads/banner/04.html %}
-                </div>
-            </div>
-
-            <!-- ========== LATEST ========== -->
-            {% assign latest_posts = site.posts | slice: 5, 5 %}
-            {% if latest_posts.size > 0 %}
-            <section class="gv2-section">
-                <div class="gv2-title"><h2>🆕 Latest</h2></div>
-                <div class="gv2-grid gv2-latest">
-                    {% for post in latest_posts %}
-                    <article class="gv2-card">
-                        <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-link">
-                            {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
-                            {% endif %}
-                        </a>
-                        <div class="gv2-card-body">
-                            <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-title-link">{{ post.title }}</a>
-                            <div class="gv2-card-desc">
-                                {% assign before_svg = post.content | split: '<p>' | first %}
-                                {{ before_svg }}
-                            </div>
-                        </div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </section>
-            {% endif %}
-
-            <!-- ========== BANNER 02: SETELAH LATEST ========== -->
-            <div class="ad-inline">
-                <div class="ad-box ad-both">
-                    {% include /ads/banner/02.html %}
-                </div>
-            </div>
-
-            <!-- ========== STORIES ========== -->
-            {% assign stories_posts = site.posts | slice: 10, 4 %}
-            {% if stories_posts.size > 0 %}
-            <section class="gv2-section">
-                <div class="gv2-title"><h2>📖 Stories</h2></div>
-                <div class="gv2-grid gv2-stories">
-                    {% for post in stories_posts %}
-                    <article class="gv2-card">
-                        <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-link">
-                            {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
-                            {% endif %}
-                        </a>
-                        <div class="gv2-card-body">
-                            <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-title-link">{{ post.title }}</a>
-                            <div class="gv2-card-desc">
-                                {% assign before_svg = post.content | split: '<p>' | first %}
-                                {{ before_svg }}
-                            </div>
-                        </div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </section>
-            {% endif %}
-
-            <!-- ========== BANNER 03: SETELAH STORIES ========== -->
-            <div class="ad-inline">
-                <div class="ad-box ad-both">
-                    {% include /ads/banner/03.html %}
-                </div>
-            </div>
-
-            <!-- ========== POPULAR ========== -->
-            {% assign popular_posts = site.posts | slice: 14, 6 %}
-            {% if popular_posts.size > 0 %}
-            <section class="gv2-section">
-                <div class="gv2-title"><h2>🔥 Popular</h2></div>
-                <div class="gv2-grid gv2-tutorials">
-                    {% for post in popular_posts %}
-                    <article class="gv2-card">
-                        <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-link">
-                            {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
-                            {% endif %}
-                        </a>
-                        <div class="gv2-card-body">
-                            <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-title-link">{{ post.title }}</a>
-                            <div class="gv2-card-desc">
-                                {% assign before_svg = post.content | split: '<p>' | first %}
-                                {{ before_svg }}
-                            </div>
-                        </div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </section>
-            {% endif %}
-
-            <!-- ========== BANNER 08: SETELAH POPULAR ========== -->
-            <div class="ad-inline">
-                <div class="ad-box ad-both">
-                    {% include /ads/banner/08.html %}
-                </div>
-            </div>
-
-            <!-- ========== ARCHIVE ========== -->
-            {% assign archive_posts = site.posts | slice: 20, 5 %}
-            {% if archive_posts.size > 0 %}
-            <section class="gv2-section">
-                <div class="gv2-title"><h2>📁 Archive</h2></div>
-                <div class="gv2-grid gv2-archive">
-                    {% for post in archive_posts %}
-                    <article class="gv2-card">
-                        <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-link">
-                            {% if post.image %}
-                                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
-                            {% endif %}
-                        </a>
-                        <div class="gv2-card-body">
-                            <a href="https://ngaloco.my.id{{ post.url }}" class="gv2-card-title-link">{{ post.title }}</a>
-                            <div class="gv2-card-desc">
-                                {% assign before_svg = post.content | split: '<p>' | first %}
-                                {{ before_svg }}
-                            </div>
-                        </div>
-                    </article>
-                    {% endfor %}
-                </div>
-            </section>
-            {% endif %}
-
-        </main>
-
-        <!-- RIGHT SIDEBAR: Banner 05 -->
-        <aside class="sidebar sidebar-right">
-            <div class="sticky-ad">
-                {% include /ads/banner/05.html %}
-            </div>
-        </aside>
-
-    </div>
-
-    <!-- ==================== BANNER 07: BOTTOM ==================== -->
-    <div class="ad-break">
-        <div class="ad-box ad-desktop">
-            {% include /ads/banner/07.html %}
+    <!-- QUERY-BASED SHORTS FEED (dinamis) -->
+    <div id="query-shorts" class="query-shorts">
+        <div class="shorts-header">
+            <a href="/" style="color:#fff; text-decoration:none;">←</a>
+            <span class="logo">🔥 LEAKSHORTS</span>
+            <span class="trend-icon" id="trend-counter">⚡ viral</span>
         </div>
-        <div class="ad-box ad-mobile">
-            {% include /ads/banner/04.html %}
+        <div class="breadcrumb">
+            <a href="/">Home</a> / <a href="/movie/">Leaks</a> / <span id="bc-name"></span>
         </div>
+
+        <div class="feed-container" id="feed-container">
+            <!-- feed items akan diisi JavaScript -->
+        </div>
+        <div class="page-indicator" id="page-indicator">⬆️ swipe ⬇️</div>
     </div>
+</div>
 
-    <!-- AVATAR SCRIPT -->
-    <script>
-    (function() {
-        var hostname = window.location.hostname;
-        var parts = hostname.split(".");
-        var fullName = parts[0];
-        if (fullName.toLowerCase() === "www") fullName = parts[1] || fullName;
-        function h(s) {var h=0;for(var i=0;i<s.length;i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return Math.abs(h);}
-        var dh = h(fullName);
-        var clean = fullName.replace(/-/g," ");
-        var w = clean.split(" "), init = "";
-        for (var i=0;i<Math.min(w.length,3);i++){if(w[i].length>0)init+=w[i].charAt(0).toUpperCase();}
-        if(init.length<2)init=fullName.substring(0,3).toUpperCase();
-        document.getElementById("domainAvatar").innerHTML = "<svg width=\"34\" height=\"34\" viewBox=\"0 0 34 34\"><rect width=\"34\" height=\"34\" rx=\"17\" fill=\"hsl("+(dh%360)+",60%,50%)\"/><text x=\"17\" y=\"23\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\">"+init+"</text></svg>";
-    })();
-    </script>
+<script>
+(function() {
+    // ========== FUNGSI UNTUK MENDAPATKAN SUBDOMAIN / DOMAIN ==========
+    function getSiteIdentity() {
+        const hostname = window.location.hostname; // contoh: sub-domain.fazri.my, fazri.my, ini-sub.github.io
+        // Pisahkan berdasarkan titik
+        const parts = hostname.split('.');
+        
+        // Jika subdomain ada (lebih dari 2 bagian untuk domain umum, atau khusus github.io)
+        if (hostname.includes('github.io')) {
+            // Untuk github.io, ambil subdomain pertama (username atau nama project)
+            return parts[0];
+        } else if (hostname.includes('pages.dev')) {
+            // Untuk cloudflare pages, ambil subdomain pertama
+            return parts[0];
+        } else if (parts.length > 2) {
+            // Subdomain: ambil bagian pertama (contoh: sub-domain dari sub-domain.fazri.my)
+            return parts[0];
+        } else {
+            // Domain utama: ambil bagian pertama sebelum TLD (contoh: fazri dari fazri.my)
+            // Kecuali untuk localhost
+            if (hostname === 'localhost') return 'Local';
+            return parts[0];
+        }
+    }
 
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    }
+
+    function formatQueryForTitle(queryStr) {
+        // Batasi panjang query untuk keamanan
+        let formatted = queryStr.length > 50 ? queryStr.substring(0, 50) + '...' : queryStr;
+        return formatted.split(' ').map(word => capitalizeFirstLetter(word)).join(' ');
+    }
+
+    // Ambil query dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    let query = urlParams.get('q');
     
-    {% include /ads/gobloggugel/default.html %}
-    {% include footer.html %}
-
+    // Dapatkan identitas situs (subdomain/domain)
+    let siteIdentity = getSiteIdentity();
+    // Format identitas: huruf pertama kapital
+    let displaySite = capitalizeFirstLetter(siteIdentity);
     
-</body>
+    // Jika query tidak ada, tampilkan default (tanpa query)
+    if (!query) {
+        // Title default
+        document.title = "LeakShorts · Viral Leaked Feed";
+        // H1, H2, H3 default (tetap konsisten)
+        const h1 = document.getElementById('dynamic-h1');
+        const h2 = document.getElementById('dynamic-h2');
+        const h3 = document.getElementById('dynamic-h3');
+        if (h1) h1.innerText = "🔥 LeakShorts";
+        if (h2) h2.innerText = "Trending Leaked Content";
+        if (h3) h3.innerText = "Viral Shorts Feed";
+        
+        // Tampilkan default div, sembunyikan query div
+        const defaultDiv = document.getElementById('default-shorts');
+        const queryDiv = document.getElementById('query-shorts');
+        if (defaultDiv) defaultDiv.style.display = 'block';
+        if (queryDiv) queryDiv.style.display = 'none';
+        return;
+    }
+    
+    // Proses query yang ada
+    const defaultDiv = document.getElementById('default-shorts');
+    const queryDiv = document.getElementById('query-shorts');
+    if (defaultDiv) defaultDiv.style.display = 'none';
+    if (queryDiv) queryDiv.style.display = 'block';
+    
+    let decodedQuery = decodeURIComponent(query.replace(/\+/g, ' '));
+    let formattedQuery = formatQueryForTitle(decodedQuery);
+    
+    // === VARIASI KALIMAT YANG KONSISTEN (tidak berubah saat refresh) ===
+    // Buat seed tetap berdasarkan query + siteIdentity agar konsisten per halaman
+    let seed = 0;
+    for (let i = 0; i < decodedQuery.length; i++) {
+        seed += decodedQuery.charCodeAt(i);
+    }
+    for (let i = 0; i < siteIdentity.length; i++) {
+        seed += siteIdentity.charCodeAt(i);
+    }
+    // Pilih variasi berdasarkan seed (tetap)
+    const variations = [
+        { title: `${formattedQuery} on ${displaySite}`, h1: `${formattedQuery} on ${displaySite}`, h2: `Explore ${formattedQuery} Content`, h3: `Trending Now on ${displaySite}` },
+        { title: `${formattedQuery} · Exclusive Leaks on ${displaySite}`, h1: `${formattedQuery} · ${displaySite}`, h2: `${formattedQuery} Full Archive`, h3: `Viral on ${displaySite}` },
+        { title: `${formattedQuery} — ${displaySite} Leaked Feed`, h1: `${formattedQuery} — ${displaySite}`, h2: `${formattedQuery} Shorts`, h3: `Watch on ${displaySite}` },
+        { title: `${displaySite} › ${formattedQuery} Leaked`, h1: `${displaySite} › ${formattedQuery}`, h2: `${formattedQuery} Viral Leaks`, h3: `${displaySite} Exclusive` },
+        { title: `${formattedQuery} | ${displaySite} LeakShorts`, h1: `${formattedQuery} | ${displaySite}`, h2: ` Trending: ${formattedQuery}`, h3: `by ${displaySite}` }
+    ];
+    const selected = variations[seed % variations.length];
+    
+    // Set Title
+    document.title = selected.title;
+    
+    // Set H1, H2, H3 (paling atas, tanpa halangan)
+    const h1El = document.getElementById('dynamic-h1');
+    const h2El = document.getElementById('dynamic-h2');
+    const h3El = document.getElementById('dynamic-h3');
+    if (h1El) h1El.innerText = selected.h1;
+    if (h2El) h2El.innerText = selected.h2;
+    if (h3El) h3El.innerText = selected.h3;
+    
+    // Lanjut ke konten feed (sama seperti kode asli, tidak diubah)
+    // extract nama influencer
+    const removeTerms = ['leaked', 'leak', 'leaks', 'archive', 'collection', 'dump', 'vault', 'pack', 'bundle', 'gallery', 'content', 'media', 'videos', 'photos', 'pics', 'onlyfans', 'tiktok', 'instagram', 'twitter', 'telegram', 'discord', 'trending', 'viral', 'exclusive', 'private', 'premium', '2024', '2025', '2026', 'full', 'complete', 'hot', 'new', 'watch', 'view', 'access', 'swipe', 'short', 'feed'];
+    let baseRaw = decodedQuery.toLowerCase();
+    removeTerms.forEach(term => {
+        const regex = new RegExp('\\b' + term + '\\b', 'gi');
+        baseRaw = baseRaw.replace(regex, '');
+    });
+    baseRaw = baseRaw.replace(/\s+/g, ' ').trim();
+    let baseName = baseRaw || decodedQuery;
+    if (baseName.length < 2) baseName = decodedQuery;
+    
+    function formatName(str) {
+        return str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
+    }
+    const displayName = formatName(baseName);
+    const displayLower = displayName.toLowerCase();
+
+    // random numbers untuk FOMO
+    const views1 = Math.floor(Math.random() * 800) + 200;
+    const views2 = Math.floor(Math.random() * 500) + 100;
+    const views3 = Math.floor(Math.random() * 300) + 80;
+    const likes1 = Math.floor(views1 * 0.08);
+    const likes2 = Math.floor(views2 * 0.07);
+    const likes3 = Math.floor(views3 * 0.06);
+    
+    // SEO description (opsional)
+    let pageDesc = `Swipe through ${displayName} leaked content. Hot leaked videos and photos trending now on Telegram and Discord.`;
+    const metaTag = document.getElementById('dynamic-description');
+    if (metaTag) metaTag.setAttribute('content', pageDesc);
+    
+    document.getElementById('bc-name').innerText = displayName;
+    document.getElementById('trend-counter').innerHTML = `⚡ ${views1 + views2 + views3}K views today`;
+    
+    // helper: membuat feed item (setiap feed item punya multiple internal links)
+    function makeFeedItem(title, badge, desc, views, likes, primaryVariant, primaryBtnText, secondaryLinks) {
+        const newPrimaryQ = `${displayLower} ${primaryVariant}`;
+        return `
+            <div class="feed-item">
+                <div class="leak-card-short">
+                    <span class="leak-badge">${badge}</span>
+                    <div class="leak-title">${title}</div>
+                    <div class="leak-desc">${desc}</div>
+                    <div class="stats-row"><span>▶ ${views}K views</span><span>❤️ ${likes}K likes</span><span>💬 trending</span></div>
+                    <a href="/movie/?q=${encodeURIComponent(newPrimaryQ)}" class="action-button">${primaryBtnText}</a>
+                    <div class="link-row">
+                        ${secondaryLinks.map(link => `<a href="/movie/?q=${encodeURIComponent(displayLower + ' ' + link.variant)}" class="mini-link">${link.label}</a>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // FEED ITEM 1: LEAKED VIDEOS
+    const secondaryLinks1 = [
+        { variant: 'leaked video compilation full', label: '🎬 Full Compilation' },
+        { variant: 'leaked private clips', label: '🔞 Private Clips' },
+        { variant: 'leaked viral moments', label: '⚡ Viral Moments' }
+    ];
+    
+    // FEED ITEM 2: LEAKED PHOTOS
+    const secondaryLinks2 = [
+        { variant: 'leaked photo gallery full', label: '📸 Full Gallery' },
+        { variant: 'leaked private photos', label: '🔒 Private Photos' },
+        { variant: 'leaked exclusive set', label: '💎 Exclusive Set' }
+    ];
+    
+    // FEED ITEM 3: PLATFORM LEAKS
+    const secondaryLinks3 = [
+        { variant: 'leaked telegram channel', label: '💬 Telegram' },
+        { variant: 'leaked discord server', label: '🎮 Discord' },
+        { variant: 'leaked twitter threads', label: '🐦 Twitter' },
+        { variant: 'leaked reddit archive', label: '🔴 Reddit' }
+    ];
+    
+    // FEED ITEM 4: EXCLUSIVE VAULT
+    const secondaryLinks4 = [
+        { variant: 'exclusive leaked vault', label: '💎 Exclusive Vault' },
+        { variant: 'rare leaked content', label: '⭐ Rare Finds' },
+        { variant: 'complete leaked archive', label: '📁 Complete Archive' }
+    ];
+    
+    const feedHTML = `
+        ${makeFeedItem(
+            `🔥 ${displayName} · Full Leaked Video Collection`, 
+            '🔥 VIRAL', 
+            `Complete leaked video archive of ${displayName}. Deleted TikTok clips, private footage, and viral moments.`, 
+            views1, likes1, 
+            'leaked videos full collection', 
+            '🎬 WATCH LEAKED VIDEOS →', 
+            secondaryLinks1
+        )}
+        ${makeFeedItem(
+            `📸 ${displayName} · Leaked Photo Gallery`, 
+            '📸 HOT', 
+            `Full ${displayName} leaked photo set. Private Instagram photos, deleted stories, and exclusive images.`, 
+            views2, likes2, 
+            'leaked photos full gallery', 
+            '📸 VIEW LEAKED PHOTOS →', 
+            secondaryLinks2
+        )}
+        ${makeFeedItem(
+            `🌐 ${displayName} · Where Leaks Spread`, 
+            '💬 SOURCES', 
+            `Original ${displayName} leak sources from Telegram, Discord, Twitter, and Reddit.`, 
+            views3, likes3, 
+            'leaked platform sources', 
+            '🔍 EXPLORE LEAK SOURCES →', 
+            secondaryLinks3
+        )}
+        ${makeFeedItem(
+            `💎 ${displayName} · Exclusive Leak Vault`, 
+            '💎 EXCLUSIVE', 
+            `Rare ${displayName} leaked content not available anywhere else. Limited access vault.`, 
+            Math.floor(views1 * 0.6), Math.floor(likes1 * 0.6), 
+            'exclusive leaked vault', 
+            '💎 ACCESS EXCLUSIVE VAULT →', 
+            secondaryLinks4
+        )}
+    `;
+    
+    document.getElementById('feed-container').innerHTML = feedHTML;
+    
+    // update page indicator dengan total item
+    const totalItems = 4;
+    document.getElementById('page-indicator').innerHTML = `⬆️ 1/${totalItems} ⬇️`;
+    
+    // update indicator saat scroll
+    const feedContainer = document.getElementById('feed-container');
+    let currentIndex = 0;
+    feedContainer.addEventListener('scroll', () => {
+        const scrollPos = feedContainer.scrollTop;
+        const itemHeight = window.innerHeight;
+        const newIndex = Math.round(scrollPos / itemHeight) + 1;
+        if (newIndex !== currentIndex && newIndex <= totalItems) {
+            currentIndex = newIndex;
+            document.getElementById('page-indicator').innerHTML = `⬆️ ${currentIndex}/${totalItems} ⬇️`;
+        }
+    });
+    
+    // Canonical dinamis (tetap dipertahankan dari kode sebelumnya)
+    const canonicalLink = document.getElementById('dynamic-canonical');
+    if (canonicalLink) {
+        const cleanUrl = window.location.href.split('?')[0];
+        canonicalLink.setAttribute('href', cleanUrl);
+    }
+})();
+</script>
+
+
+
+{% include /ads/gobloggugel/default.html %}
+{% include footer.html %}
+
+
+</div></body>
 </html>
